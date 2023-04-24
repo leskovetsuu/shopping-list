@@ -1,4 +1,13 @@
 /* Новые элементы должны добавляться в список по нажатию на Enter */
+const inputWrapper=document.querySelector('.input-wrapper');
+const sendInput=document.querySelector('#input');
+const sendItems=document.querySelector('.items');
+const sendButton=document.createE
+inputWrapper.addEventListener('keydown', function(event) {
+if (event.key == 'Enter') 
+   return (sendItems);
+});
+
 
 /* Пустые элементы не должны добавляться */
 
