@@ -2,10 +2,20 @@
 const inputWrapper=document.querySelector('.input-wrapper');
 const sendInput=document.querySelector('#input');
 const sendItems=document.querySelector('.items');
-const sendButton=document.createE
-inputWrapper.addEventListener('keydown', function(event) {
-if (event.key == 'Enter') 
-   return (sendItems);
+const newItems=document.createElement('div');
+newItems.textContent=inputWrapper;
+newItems.addEventListener('keydown', function(event){
+if (event.keyCode == 'Enter'){
+   sendItems=newItems.value;
+}
+})
+inputWrapper.addEventListener('click', function(){
+   const newMMassege=sendInput.value;
+})
+sendInput.addEventListener('keydown', function(event) {
+if (event.keyCode == 'Enter'){
+newMMassege.click();
+}
 });
 
 
